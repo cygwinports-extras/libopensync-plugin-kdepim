@@ -1,0 +1,4 @@
+category: Libs KDE
+requires: cygwin glib2 libopensync0 libxml2 kdelibs4 libkcal qt3
+sdesc: "OpenSync KDE-PIM plugin"
+ldesc: "KDE-PIM plugin for the OpenSync synchronization framework"

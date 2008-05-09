@@ -1,0 +1,13 @@
+inherit kde3 opensync
+
+# AC_CONFIG_AUX_DIR([aux])
+USE_MANAGED_MOUNT=1
+
+MAKEOPTS+=" LDFLAGS=-no-undefined"
+
+src_compile() {
+	cd ${S}
+	cygautoreconf
+	cd ${B}
+	kde3_compile --libexecdir=/usr/lib/opensync
+}
